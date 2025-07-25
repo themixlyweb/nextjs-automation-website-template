@@ -1,0 +1,23 @@
+{
+  "name": "auto-flow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "lint": "next lint",
+    "build": "next build",
+    "start": "next start",
+    "sass": "sass --no-source-map src/assets/scss:public/css"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "next": "^15.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.79.1",
+    "swiper": "^9.4.1"
+  }
+}

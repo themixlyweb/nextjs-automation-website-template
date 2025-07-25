@@ -1,0 +1,222 @@
+/* =======================================================
+  ⚙️  Core Colors & Utilities
+======================================================= */
+
+.text-main {
+  color: #f25c05 !important;
+}
+.text-second {
+  color: #1f1b18 !important;
+}
+.primary-bg {
+  background: #f25c05 !important;
+}
+.primary-bg-soft {
+  background-color: #ddede2 !important;
+}
+.secondary-bg {
+  background: #1f1b18 !important;
+}
+.brown-bg {
+  background: #b94700 !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* =======================================================
+  🧭 Typography
+======================================================= */
+
+section h1,
+section h2 {
+  font-weight: 800 !important;
+  color: #1f1b18 !important;
+}
+
+.link h3:hover,
+.link:hover h4 {
+  color: #1f1b18 !important;
+}
+
+.widget-title {
+  color: #fff !important;
+}
+
+/* =======================================================
+  🧢 Navigation / Navbar
+======================================================= */
+
+.nav-link {
+  padding: 0.6rem 1.5rem 0.4rem 1.5rem !important;
+}
+
+.navbar-expand-lg.transparent:not(.fixed) {
+  padding-top: 0rem !important;
+}
+
+/* =======================================================
+  🔖 Section Backgrounds
+======================================================= */
+
+/* Background image section wrapper */
+.section-bg-image {
+  position: relative;
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Overlay for fact sections */
+.card-overlay::before,
+.bg-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.bg-overlay::before {
+  top: 3px;
+}
+.card-overlay::before {
+  margin-top: -16px;
+  background: rgba(95, 154, 241, 0.8);
+}
+.bg-overlay::before {
+  background: rgba(30, 34, 40, 0.8);
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.card-overlay:not(.bg-content) *,
+.bg-overlay:not(.bg-content) * {
+  position: relative;
+  z-index: 2;
+}
+
+/* =======================================================
+  🎯 Hero / CTA / Video
+======================================================= */
+
+.hero-text-bg {
+  border-radius: 2%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.hero-p {
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+}
+
+/* Video background */
+.video-container video {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -3;
+}
+
+/* Active tab button style */
+.active-btn {
+  background-color: #b94700;
+}
+.active-btn h3,
+.active-btn p {
+  color: #fff !important;
+}
+.active-btn .icon-box {
+  background-color: #fff !important;
+  border: 2px solid #b94700;
+}
+
+/* =======================================================
+  🚀 Swiper Sliders
+======================================================= */
+
+.swiper-container.nav-bottom .swiper-navigation {
+  bottom: 23.4rem !important;
+  left: 28rem !important;
+}
+.products .swiper-container.nav-bottom .swiper-navigation {
+  bottom: 21.7rem !important;
+  left: 28rem !important;
+}
+
+.theme-carousal .swiper-container .swiper .swiper-button-next::after,
+.theme-carousal .swiper-container .swiper .swiper-button-prev::after {
+  background: #f25c05 !important;
+  font-size: 20px !important;
+  padding: 10px 13px;
+  border-radius: 50% !important;
+  color: #fff;
+}
+.swiper-container.nav-color .swiper-navigation .swiper-button {
+  background: #f25c05 !important;
+}
+
+/* =======================================================
+  📚 Footer
+======================================================= */
+
+.footer-icon i {
+  background-color: black !important;
+  border: 2px solid transparent !important;
+}
+.footer-icon:hover i {
+  background-color: #b94700 !important;
+  border: 2px solid white !important;
+}
+
+/* =======================================================
+  🧩 Components / Misc
+======================================================= */
+
+/* Underline Effect */
+.underline-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.underline-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.2em;
+  width: 100%;
+  height: 0.3em;
+  background: url('/img/underline.svg') no-repeat bottom;
+  background-size: 100% 100%;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+
+/* Optional alternative underline SVG styling */
+.underline-svg {
+  width: 100%;
+  height: 0.3em;
+  display: block;
+  margin-top: 0.1em;
+  color: #f25c05 !important;
+  transform: scaleX(-1);
+}
+
+/* Offcanvas Sidebar */
+.offcanvas {
+  min-width: 350px !important;
+}
+
+/* Clip-path shapes */
+.triangle-shape {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 100% 0%);
+}
+.reverse-triangle-shape {
+  clip-path: polygon(0% 0%, 100% 100%, 100% 0%, 0% 0%);
+  background-color: #1f1b18;
+}
